@@ -1,94 +1,121 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-        rel="stylesheet" />
-    <link rel="stylesheet" href="styles.css" />
-    <script src="https://kit.fontawesome.com/bfaea3e5bc.js" crossorigin="anonymous"></script>
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/bfaea3e5bc.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Portfólio</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <header class="header">
-        <div class="title">
-            <h2>&lt;JM&#47;&#62;</h2>
-        </div>
-        <nav>
-            <ul class="links">
-                <li><a class="link" href="/">Home</a></li>
-                <li><a class="link" href="#sobre">Sobre</a></li>
-                <li><a class="link" href="/projetos">Projetos</a></li>
-            </ul>
-        </nav>
+      <div class="title">
+        <h2>&lt;JM&#47;&#62;</h2>
+      </div>
+      <nav>
+        <ul class="links">
+          <li><a class="link" href="/">Home</a></li>
+          <li><a class="link" href="#sobre">Sobre</a></li>
+          <li><a class="link" href="#skills">Habilidades</a></li>
+          <li><a class="link" href="projetos.html">Projetos</a></li>
+        </ul>
+        <i class="fa-solid fa-bars" id="menu"></i>
+      </nav>
     </header>
-    <main id="container">
-        <section id="left">
-            <div class="presentation">
-                <h3>Olá, eu sou</h3>
-                <h2>João Vitor Maciel</h2>
-                <h3>Desenvolvedor Full-Stack</h3>
-            </div>
-            <div id="buttons">
-                <div>
-                    <button class="button buttonGit">
-                        <i class="fa-brands fa-github"></i>
-                        <a href="https://github.com/JoaoMaciel5G" target="_blank">GitHub</a>
-                    </button>
-                </div>
-                <div>
-                    <button class="button buttonCV">
-                        <i class="fa-solid fa-cloud-arrow-down"></i>
-                        <a href="/assets/w3logo.jfif" download="curriculo.pdf">Currículo</a>
-                    </button>
-                </div>
-            </div>
-        </section>
-        <section id="right">
-            <div class="img">
-                <img src="/assets/garoto-programador.avif" alt="Homem mexendo em computador em sala de servidores" />
-            </div>
-        </section>
+    <main class="container">
+      <section class="left-section">
+        <div class="container-title">
+          <h2>
+            Olá, eu sou
+            <p id="name">João Victor Maciel</p>
+            Desenvolvedor Full-stack
+          </h2>
+        </div>
+        <div class="buttons">
+          <button id="button-git">
+            <a href="https://github.com/JoaoMaciel5G">
+              <i class="fa-brands fa-xl fa-github icon"></i>GitHub
+            </a>
+          </button>
+          <button id="button-cv">
+            <a href="/assets/download (1).pdf" download="curriculo.pdf">
+              <i class="fa-solid fa-download icon"></i>Curriculo
+            </a>
+          </button>
+        </div>
+      </section>
+      <section class="right-section">
+        <div>
+          <img
+            id="img"
+            src="/assets/programming-animate.svg"
+            alt="homem mexendo no computador sentado em uma mesa"
+          />
+        </div>
+      </section>
     </main>
     <section id="sobre">
-        <div class="minha-foto">
-            <img src="#" alt="minha foto" />
-        </div>
-        <div class="sobre-mim">
-            <div>
-                <h2>Sobre Mim</h2>
-            </div>
-            <div>
-                <p>Barra funda, São Paulo</p>
-            </div>
-            <div>
-                <p>
-                    Olá, Sou Desenvolvedor web Full-Stack, em fev/2020 decidi começar a
-                    estudar e me dedicar de fato em programação, comecei aprendendo
-                    python, e depois parti para as tecnologias web principais(HTML, CSS,
-                    Javascript, React.js, Node.js etc...), sou apaixonado em
-                    neurociências, psicologia e comportamento humano, tudo que envolve
-                    psicologia eu quero estar por dentro, tanto, que tenho um Blog de neurociências
-                    como projeto pessoal. Desde que comecei a estudar fiz alguns cursos,
-                    mas a maioria foi estudar por conta própria, sou totalmente
-                    autodidata, e estou em constante aprendizado. Busco minha primeira
-                    entrada no mercado de trabalho.
-                </p>
-            </div>
-            <div>
-                <button class="button buttonEmail">
-                    <i class="fa-solid fa-envelope"></i>
-                    <a href="mailto:joaomaciel.dev@gmail.com">E-mail</a>
-                </button>
-            </div>
-        </div>
+      <div id="minha-foto">
+        <img src="#" alt="Minha Foto">
+      </div>
+      <div id="descricao">
+        <h2>Sobre Mim</h2>
+        <p>Barra Funda, São Paulo</p>
+        <p>
+          Olá! Sou desenvolvedor web Full-stack, quando iniciei na programação, comecei estudando pela
+          linguagem python, logo após, comecei a aprender as tecnologias
+          principais da web(HTML, CSS, Javascript, React, Node.js, etc...).
+          Sempre gostei de tudo que envolvesse tecnologia, tanto que, tenho um
+          curso de manutenção e conserto de dispositivos móveis, e de web
+          hacking e de falhas web(XSS, SQL injection, etc...). Em ago/2021,
+          comecei a estudar programação pra valer, fazendo cursos, e vendo
+          documentações das tecnologias e fazendo projetos. Amo neurociências e
+          tudo que envolve psicologia(comportamental e TCC), tanto que tenho um
+          blog de neurociências com artigos, como projeto pessoal.
+        </p>
+        <p id="email">E-mail para contato: joaomaciel.dev@gmail.com</p>
+      </div>
     </section>
-</body>
-
+    <section id="skills">
+      <h2 class="title-skills">Tecnologias que mais uso</h2>
+      <div class="container-icons">
+        <img class="icons" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg" />
+        <img class="icons" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg" />
+        <img class="icons" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg" />
+      </div>
+      <div class="container-icons">
+        <img class="icons" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" />
+        <img class="icons" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg" />
+        <img class="icons" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original-wordmark.svg" />
+      </div>
+      <div class="container-icons">
+        <img class="icons" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-plain-wordmark.svg" />
+        <img class="icons" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg" />
+      </div>
+      <h2 class="title-skills">Tecnologias que estou aprendendo</h2>
+      <div class="container-icons">
+        <img class="icons" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" />
+        <img class="icons" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain-wordmark.svg" />
+      </div>
+    </section>
+    <footer id="footer">
+      <p>&copy; Criado por: João Victor Maciel</p>
+    </footer>
+    <script src="./script.js"></script>
+  </body>
 </html>
